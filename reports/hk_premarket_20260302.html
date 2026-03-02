@@ -3,390 +3,451 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>🇭🇰 港股盘前报告 · 2026-03-02 19:34</title>
+<title>🇭🇰 港股盘前报告 · 2026-03-02</title>
 <style>
-:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--primary:#58a6ff;
-  --green:#3fb950;--red:#f85149;--yellow:#d29922;--text1:#e6edf3;--text2:#8b949e}
+:root{--bg:#f8f9fa;--card:#fff;--border:#e8eaed;--primary:#1a73e8;--text1:#202124;--text2:#5f6368}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-  background:var(--bg);color:var(--text1);line-height:1.6}
-.header{background:linear-gradient(135deg,#0d1117 0%,#1c2333 50%,#0d1117 100%);
-  padding:40px 20px;text-align:center;border-bottom:1px solid var(--border)}
-.header .flag{font-size:56px;margin-bottom:12px}
-.header h1{font-size:28px;font-weight:700;color:#fff;margin-bottom:8px}
-.header .subtitle{color:var(--text2);font-size:14px}
-.header .update-time{display:inline-block;margin-top:12px;padding:4px 16px;
-  background:rgba(88,166,255,.1);border:1px solid rgba(88,166,255,.3);
-  border-radius:20px;font-size:13px;color:var(--primary)}
-.container{max-width:1100px;margin:0 auto;padding:24px 20px 60px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:12px;
-  padding:20px;margin-bottom:20px}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text1);font-size:14px}
+.header{background:linear-gradient(135deg,#c62828,#e53935,#ef9a9a);color:#fff;padding:28px 24px}
+.header h1{font-size:28px;font-weight:700;margin-bottom:6px}
+.header p{opacity:.85;font-size:14px}
+.badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;background:rgba(255,255,255,.2);margin-right:8px}
+.container{max-width:1100px;margin:0 auto;padding:20px 16px}
+.card{background:var(--card);border-radius:12px;padding:20px 24px;margin-bottom:20px;box-shadow:0 1px 6px rgba(0,0,0,.08)}
 .card-header{display:flex;align-items:center;gap:12px;margin-bottom:16px}
 .card-header h2{font-size:18px;font-weight:600}
-.icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;
-  justify-content:center;font-size:16px}
-.icon-red{background:rgba(248,81,73,.15)}
-.icon-green{background:rgba(63,185,80,.15)}
-.icon-blue{background:rgba(88,166,255,.15)}
-.icon-yellow{background:rgba(210,153,34,.15)}
-.index-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-bottom:20px}
-.index-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px}
-.index-name{font-size:13px;color:var(--text2);margin-bottom:6px}
-.index-price{font-size:24px;font-weight:700}
-.index-chg{font-size:14px;margin-top:4px}
-.up{color:var(--green)} .down{color:var(--red)}
-.section-title{font-size:15px;font-weight:600;color:var(--primary);
-  margin:20px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
-table.data-table{width:100%;border-collapse:collapse;font-size:14px}
-table.data-table th{background:rgba(88,166,255,.08);padding:10px 12px;
-  text-align:left;font-weight:600;color:var(--text2);font-size:13px}
-table.data-table td{padding:10px 12px;border-bottom:1px solid var(--border)}
-table.data-table tr:last-child td{border-bottom:none}
-table.data-table tr:hover td{background:rgba(88,166,255,.05)}
-.status{display:inline-block;padding:2px 10px;border-radius:12px;font-size:12px;font-weight:600}
-.status-success{background:rgba(63,185,80,.15);color:var(--green)}
-.status-danger{background:rgba(248,81,73,.15);color:var(--red)}
-.status-warning{background:rgba(210,153,34,.15);color:var(--yellow)}
-.status-info{background:rgba(88,166,255,.15);color:var(--primary)}
-.stock-section{background:var(--card);border:1px solid var(--border);
-  border-radius:12px;padding:24px;margin-bottom:24px}
-.stock-header{display:flex;align-items:flex-start;gap:16px;margin-bottom:20px;flex-wrap:wrap}
-.stock-badge{background:linear-gradient(135deg,#1a73e8,#0d47a1);color:#fff;
-  padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;white-space:nowrap}
-.stock-price{font-size:26px;font-weight:700}
-.indicator-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:12px 0}
-.ind-item{background:rgba(255,255,255,.03);border:1px solid var(--border);
-  border-radius:8px;padding:10px 14px}
+.icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px}
+.icon-red{background:#fce8e6}
+.icon-blue{background:#e8f0fe}
+.icon-green{background:#e6f4ea}
+.index-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.index-card{background:var(--bg);border-radius:10px;padding:16px;text-align:center;border:1px solid var(--border)}
+.index-name{font-size:13px;color:var(--text2);margin-bottom:8px}
+.index-price{font-size:24px;font-weight:700;margin-bottom:4px}
+.index-chg{font-size:16px;font-weight:600;margin-bottom:4px}
+.index-sub{font-size:12px;color:var(--text2)}
+.scan-table{width:100%;border-collapse:collapse}
+.scan-table th{background:#f1f3f4;padding:10px 12px;text-align:left;font-size:13px;color:var(--text2)}
+.scan-table td{padding:10px 12px;border-bottom:1px solid var(--border);font-size:13px}
+.scan-table tr:hover{background:#f8f9fa}
+.stock-section{background:var(--card);border-radius:12px;padding:24px;margin-bottom:24px;box-shadow:0 2px 12px rgba(0,0,0,.1);border-left:4px solid #c62828}
+.stock-section-header{display:flex;align-items:flex-start;gap:16px;margin-bottom:20px;flex-wrap:wrap}
+.stock-badge{background:#c62828;color:#fff;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;white-space:nowrap}
+.stock-price-box{text-align:right}
+.sp{font-size:28px;font-weight:700}
+.up{color:#1e8e3e}.down{color:#c5221f}
+.section-title{font-size:15px;font-weight:600;color:#c62828;margin:16px 0 10px;padding-bottom:6px;border-bottom:2px solid #fce8e6}
+.indicator-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;margin-bottom:12px}
+.ind-item{background:#f8f9fa;border-radius:8px;padding:10px 12px;border:1px solid var(--border)}
 .il{font-size:12px;color:var(--text2);margin-bottom:4px}
-.iv{font-size:15px;font-weight:600}
-.score-section{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin:12px 0}
-.score-card{background:rgba(255,255,255,.03);border:1px solid var(--border);
-  border-radius:10px;padding:14px;text-align:center}
-.score-card .label{font-size:12px;color:var(--text2);margin-bottom:8px}
-.score-circle{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;
-  justify-content:center;font-size:18px;font-weight:700;margin:0 auto 8px}
-.score-excellent{background:rgba(63,185,80,.2);color:var(--green)}
-.score-good{background:rgba(88,166,255,.2);color:var(--primary)}
-.score-medium{background:rgba(210,153,34,.2);color:var(--yellow)}
-.score-poor{background:rgba(248,81,73,.2);color:var(--red)}
-.progress-bar{height:4px;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden}
-.progress-fill{height:100%;border-radius:2px;transition:width .8s ease}
-.progress-fill.excellent{background:var(--green)}
-.progress-fill.good{background:var(--primary)}
-.progress-fill.medium{background:var(--yellow)}
-.progress-fill.poor{background:var(--red)}
-.recommendation{background:linear-gradient(135deg,rgba(63,185,80,.1),rgba(88,166,255,.1));
-  border:1px solid rgba(63,185,80,.3);border-radius:12px;padding:20px}
-.recommendation h3{font-size:16px;font-weight:700;margin-bottom:8px}
+.iv{font-size:14px;font-weight:600}
+.data-table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:12px}
+.data-table th{background:#fce8e6;padding:8px 12px;text-align:left;color:#c62828;font-weight:600}
+.data-table td{padding:8px 12px;border-bottom:1px solid #fce8e6}
+.status{display:inline-block;padding:2px 8px;border-radius:10px;font-size:12px;font-weight:500}
+.status-success{background:#e6f4ea;color:#1e8e3e}
+.status-danger{background:#fce8e6;color:#c5221f}
+.status-warning{background:#fef7e0;color:#e37400}
+.status-info{background:#e8f0fe;color:#1967d2}
+.recommendation{background:linear-gradient(135deg,#c62828,#e53935);color:#fff;border-radius:12px;padding:20px 24px;margin-top:16px}
+.recommendation h3{font-size:16px;margin-bottom:8px}
 .verdict{font-size:20px;font-weight:700;margin-bottom:12px}
 .price-targets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.price-target{background:rgba(255,255,255,.05);border-radius:8px;padding:12px;text-align:center}
-.price-target .label{font-size:12px;color:var(--text2);margin-bottom:4px}
-.price-target .value{font-size:16px;font-weight:700;color:var(--primary)}
-.risk-warning{background:rgba(210,153,34,.08);border:1px solid rgba(210,153,34,.3);
-  border-radius:10px;padding:16px}
-.risk-warning h4{color:var(--yellow);margin-bottom:10px}
-.risk-warning ul{padding-left:20px}
-.risk-warning li{color:var(--text2);font-size:13px;margin-bottom:6px}
+.price-target{background:rgba(255,255,255,.15);border-radius:8px;padding:12px;text-align:center}
+.price-target .label{font-size:12px;opacity:.8;margin-bottom:6px}
+.price-target .value{font-size:18px;font-weight:700}
+.risk-warning{background:#fff8e1;border:1px solid #f9a825;border-radius:10px;padding:16px 20px}
+.risk-warning h4{color:#f57f17;margin-bottom:10px}
+.risk-warning ul{padding-left:20px;color:#5d4037;line-height:1.8;font-size:13px}
+.footer{text-align:center;padding:24px;color:var(--text2);font-size:13px}
 .quick-links{display:flex;flex-wrap:wrap;gap:10px}
-.quick-link{padding:8px 16px;background:rgba(88,166,255,.1);border:1px solid rgba(88,166,255,.2);
-  border-radius:8px;color:var(--primary);text-decoration:none;font-size:13px}
-.quick-link:hover{background:rgba(88,166,255,.2)}
-.footer{text-align:center;color:var(--text2);font-size:13px;padding:20px;
-  border-top:1px solid var(--border);margin-top:20px}
-@media(max-width:600px){.price-targets{grid-template-columns:1fr}.stock-header{flex-direction:column}}
+.quick-link{display:inline-block;padding:8px 16px;background:#fce8e6;color:#c62828;border-radius:20px;text-decoration:none;font-size:13px;font-weight:500}
+.quick-link:hover{background:#c62828;color:#fff}
+@media(max-width:600px){.price-targets{grid-template-columns:1fr}.stock-section-header{flex-direction:column}}
 </style>
 </head>
 <body>
 <div class="header">
-  <div class="flag">🇭🇰</div>
-  <h1>港股盘前日报</h1>
-  <div class="subtitle">港交所 · 每个交易日 09:20 自动更新 · 数据来源 Stooq</div>
-  <div class="update-time">📅 报告日期：2026-03-02 19:34</div>
+  <h1>🇭🇰 港股盘前日报</h1>
+  <p>
+    <span class="badge">📅 2026-03-02</span>
+    <span class="badge">🕙 2026-03-02 19:37 北京时间</span>
+    <span class="badge">港股 10:00 开盘</span>
+  </p>
 </div>
+
 <div class="container">
 
-  <div class="card">
-    <div class="card-header"><div class="icon icon-red">📊</div><h2>三大指数</h2></div>
-    <div class="index-grid"></div>
+<!-- 三大指数 -->
+<div class="card">
+  <div class="card-header"><div class="icon icon-red">📈</div><h2>三大指数概览（昨收）</h2></div>
+  <div class="index-grid">
+            <div class="index-card">
+                <div class="index-name">恒生指数</div>
+                <div class="index-price" style="color:#c5221f">HK$26,059.85</div>
+                <div class="index-chg" style="color:#c5221f">▼2.14%</div>
+                <div class="index-sub">周<span style='color:#c5221f'>▼3.77%</span> 月<span style='color:#c5221f'>▼6.35%</span></div>
+            </div></div>
+</div>
+
+<!-- 市场扫描 -->
+<div class="card">
+  <div class="card-header"><div class="icon icon-blue">🔍</div><h2>全市场扫描（17 只标的）</h2></div>
+  <div style="overflow-x:auto">
+  <table class="scan-table">
+    <thead><tr>
+      <th>股票</th><th>最新价</th><th>日涨跌</th><th>周涨跌</th><th>月涨跌</th>
+      <th>RSI14</th><th>MACD柱</th><th>距52W高</th><th>评分</th>
+    </tr></thead>
+    <tbody><tr>
+                <td><strong>恒生指数</strong><br><span style='color:#999;font-size:12px'>^HSI</span></td>
+                <td>HK$26059.85</td>
+                <td style="color:#c5221f">-2.14%</td>
+                <td style="color:#c5221f">-3.77%</td>
+                <td style="color:#c5221f">-6.35%</td>
+                <td style="color:#333">41.2</td>
+                <td style="color:#c5221f">-100.169</td>
+                <td style="color:#1e8e3e">-7.1%</td>
+                <td><span style="background:#999;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px">2分</span></td>
+            </tr><tr>
+                <td><strong>腾讯控股</strong><br><span style='color:#999;font-size:12px'>700.HK</span></td>
+                <td>HK$518.00</td>
+                <td style="color:#1e8e3e">+1.17%</td>
+                <td style="color:#c5221f">-0.77%</td>
+                <td style="color:#c5221f">-14.66%</td>
+                <td style="color:#e37400">32.9</td>
+                <td style="color:#c5221f">-2.267</td>
+                <td style="color:#c5221f">-24.2%</td>
+                <td><span style="background:#e37400;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px">4分</span></td>
+            </tr><tr>
+                <td><strong>阿里巴巴</strong><br><span style='color:#999;font-size:12px'>9988.HK</span></td>
+                <td>HK$142.90</td>
+                <td style="color:#c5221f">-0.07%</td>
+                <td style="color:#c5221f">-2.86%</td>
+                <td style="color:#c5221f">-15.89%</td>
+                <td style="color:#c5221f">28.5</td>
+                <td style="color:#c5221f">-2.028</td>
+                <td style="color:#c5221f">-23.3%</td>
+                <td><span style="background:#1e8e3e;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px">6分</span></td>
+            </tr><tr>
+                <td><strong>美团</strong><br><span style='color:#999;font-size:12px'>3690.HK</span></td>
+                <td>HK$81.15</td>
+                <td style="color:#1e8e3e">+0.87%</td>
+                <td style="color:#1e8e3e">+0.50%</td>
+                <td style="color:#c5221f">-15.95%</td>
+                <td style="color:#c5221f">29.6</td>
+                <td style="color:#c5221f">-0.440</td>
+                <td style="color:#c5221f">-57.2%</td>
+                <td><span style="background:#1e8e3e;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px">6分</span></td>
+            </tr><tr>
+                <td><strong>京东</strong><br><span style='color:#999;font-size:12px'>9618.HK</span></td>
+                <td>HK$104.40</td>
+                <td style="color:#1e8e3e">+0.38%</td>
+                <td style="color:#1e8e3e">+0.58%</td>
+                <td style="color:#c5221f">-8.02%</td>
+                <td style="color:#333">41.5</td>
+                <td style="color:#c5221f">-0.235</td>
+                <td style="color:#c5221f">-42.3%</td>
+                <td><span style="background:#e37400;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px">4分</span></td>
+            </tr><tr>
+                <td><strong>网易</strong><br><span style='color:#999;font-size:12px'>9999.HK</span></td>
+                <td>HK$179.20</td>
+                <td style="color:#1e8e3e">+2.40%</td>
+                <td style="color:#c5221f">-0.06%</td>
+                <td style="color:#c5221f">-13.43%</td>
+                <td style="color:#e37400">36.0</td>
+                <td style="color:#c5221f">-0.697</td>
+                <td style="color:#c5221f">-27.7%</td>
+                <td><span style="background:#e37400;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px">4分</span></td>
+            </tr><tr>
+                <td><strong>联想集团</strong><br><span style='color:#999;font-size:12px'>992.HK</span></td>
+                <td>HK$9.73</td>
+                <td style="color:#1e8e3e">+1.25%</td>
+                <td style="color:#1e8e3e">+5.53%</td>
+                <td style="color:#1e8e3e">+9.57%</td>
+                <td style="color:#333">68.7</td>
+                <td style="color:#1e8e3e">+0.066</td>
+                <td style="color:#c5221f">-28.5%</td>
+                <td><span style="background:#e37400;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px">4分</span></td>
+            </tr><tr>
+                <td><strong>快手</strong><br><span style='color:#999;font-size:12px'>1024.HK</span></td>
+                <td>HK$62.85</td>
+                <td style="color:#c5221f">-1.18%</td>
+                <td style="color:#c5221f">-5.49%</td>
+                <td style="color:#c5221f">-20.24%</td>
+                <td style="color:#c5221f">20.7</td>
+                <td style="color:#c5221f">-0.967</td>
+                <td style="color:#c5221f">-32.1%</td>
+                <td><span style="background:#1e8e3e;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px">6分</span></td>
+            </tr><tr>
+                <td><strong>汇丰控股</strong><br><span style='color:#999;font-size:12px'>5.HK</span></td>
+                <td>HK$147.30</td>
+                <td style="color:#1e8e3e">+1.59%</td>
+                <td style="color:#1e8e3e">+9.68%</td>
+                <td style="color:#1e8e3e">+9.52%</td>
+                <td style="color:#333">63.8</td>
+                <td style="color:#1e8e3e">+0.374</td>
+                <td style="color:#1e8e3e">-0.5%</td>
+                <td><span style="background:#e37400;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px">3分</span></td>
+            </tr><tr>
+                <td><strong>工商银行</strong><br><span style='color:#999;font-size:12px'>1398.HK</span></td>
+                <td>HK$6.45</td>
+                <td style="color:#1e8e3e">+0.47%</td>
+                <td style="color:#1e8e3e">+0.62%</td>
+                <td style="color:#1e8e3e">+1.42%</td>
+                <td style="color:#333">51.5</td>
+                <td style="color:#c5221f">-0.013</td>
+                <td style="color:#1e8e3e">-3.2%</td>
+                <td><span style="background:#999;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px">1分</span></td>
+            </tr><tr>
+                <td><strong>建设银行</strong><br><span style='color:#999;font-size:12px'>939.HK</span></td>
+                <td>HK$7.99</td>
+                <td style="color:#c5221f">-0.12%</td>
+                <td style="color:#c5221f">-0.62%</td>
+                <td style="color:#1e8e3e">+2.83%</td>
+                <td style="color:#333">55.1</td>
+                <td style="color:#c5221f">-0.009</td>
+                <td style="color:#1e8e3e">-6.7%</td>
+                <td><span style="background:#999;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px">0分</span></td>
+            </tr><tr>
+                <td><strong>中国平安</strong><br><span style='color:#999;font-size:12px'>2318.HK</span></td>
+                <td>HK$68.00</td>
+                <td style="color:#1e8e3e">+0.22%</td>
+                <td style="color:#c5221f">-3.61%</td>
+                <td style="color:#c5221f">-2.44%</td>
+                <td style="color:#e37400">39.8</td>
+                <td style="color:#c5221f">-0.602</td>
+                <td style="color:#1e8e3e">-9.0%</td>
+                <td><span style="background:#e37400;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px">3分</span></td>
+            </tr><tr>
+                <td><strong>新东方</strong><br><span style='color:#999;font-size:12px'>9901.HK</span></td>
+                <td>HK$43.74</td>
+                <td style="color:#1e8e3e">+0.23%</td>
+                <td style="color:#c5221f">-6.46%</td>
+                <td style="color:#c5221f">-0.27%</td>
+                <td style="color:#c5221f">24.2</td>
+                <td style="color:#c5221f">-0.600</td>
+                <td style="color:#c5221f">-14.3%</td>
+                <td><span style="background:#e37400;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px">4分</span></td>
+            </tr><tr>
+                <td><strong>阿里健康</strong><br><span style='color:#999;font-size:12px'>241.HK</span></td>
+                <td>HK$5.58</td>
+                <td style="color:#1e8e3e">+0.36%</td>
+                <td style="color:#c5221f">-7.77%</td>
+                <td style="color:#c5221f">-16.22%</td>
+                <td style="color:#c5221f">23.8</td>
+                <td style="color:#c5221f">-0.093</td>
+                <td style="color:#c5221f">-29.5%</td>
+                <td><span style="background:#1e8e3e;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px">6分</span></td>
+            </tr><tr>
+                <td><strong>理想汽车</strong><br><span style='color:#999;font-size:12px'>2015.HK</span></td>
+                <td>HK$68.75</td>
+                <td style="color:#1e8e3e">+0.15%</td>
+                <td style="color:#c5221f">-1.93%</td>
+                <td style="color:#1e8e3e">+5.28%</td>
+                <td style="color:#333">52.3</td>
+                <td style="color:#c5221f">-0.339</td>
+                <td style="color:#c5221f">-50.3%</td>
+                <td><span style="background:#999;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px">1分</span></td>
+            </tr><tr>
+                <td><strong>小鹏汽车</strong><br><span style='color:#999;font-size:12px'>9868.HK</span></td>
+                <td>HK$68.35</td>
+                <td style="color:#1e8e3e">+1.26%</td>
+                <td style="color:#1e8e3e">+0.74%</td>
+                <td style="color:#c5221f">-5.92%</td>
+                <td style="color:#333">56.0</td>
+                <td style="color:#1e8e3e">+0.304</td>
+                <td style="color:#c5221f">-38.3%</td>
+                <td><span style="background:#e37400;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px">4分</span></td>
+            </tr><tr>
+                <td><strong>中国石油</strong><br><span style='color:#999;font-size:12px'>857.HK</span></td>
+                <td>HK$9.54</td>
+                <td style="color:#1e8e3e">+0.85%</td>
+                <td style="color:#1e8e3e">+0.21%</td>
+                <td style="color:#1e8e3e">+8.29%</td>
+                <td style="color:#333">60.2</td>
+                <td style="color:#1e8e3e">+0.001</td>
+                <td style="color:#1e8e3e">-2.3%</td>
+                <td><span style="background:#e37400;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px">3分</span></td>
+            </tr></tbody>
+  </table>
   </div>
+</div>
 
-  <div class="card">
-    <div class="card-header"><div class="icon icon-blue">🔍</div><h2>港股全市场扫描</h2></div>
-    <table class="data-table">
-      <thead><tr><th>股票</th><th>收盘价</th><th>日涨跌</th><th>周涨跌</th><th>月涨跌</th><th>RSI(14)</th><th>MACD</th><th>距52W高</th></tr></thead>
-      <tbody>
-        <tr>
-          <td><b>阿里巴巴-W</b><br><span style="font-size:11px;color:var(--text2)">9988.HK</span></td>
-          <td class="down"><b>HK$142.90</b></td>
-          <td class="down">▼0.07%</td>
-          <td class="down">▼2.86%</td>
-          <td class="down">▼13.50%</td>
-          <td><span style="color:#ea4335;font-weight:bold">28.5 超卖</span></td>
-          <td><span style="color:#ea4335">-2.028 死叉</span></td>
-          <td class="down">-23.3%</td>
-        </tr>
-        <tr>
-          <td><b>美团-W</b><br><span style="font-size:11px;color:var(--text2)">3690.HK</span></td>
-          <td class="up"><b>HK$81.15</b></td>
-          <td class="up">▲0.87%</td>
-          <td class="up">▲0.50%</td>
-          <td class="down">▼16.43%</td>
-          <td><span style="color:#ea4335;font-weight:bold">29.6 超卖</span></td>
-          <td><span style="color:#ea4335">-0.440 死叉</span></td>
-          <td class="down">-57.2%</td>
-        </tr>
-        <tr>
-          <td><b>京东集团-SW</b><br><span style="font-size:11px;color:var(--text2)">9618.HK</span></td>
-          <td class="up"><b>HK$104.40</b></td>
-          <td class="up">▲0.38%</td>
-          <td class="up">▲0.58%</td>
-          <td class="down">▼10.00%</td>
-          <td><span style="color:#b06000">41.5 接近超卖</span></td>
-          <td><span style="color:#ea4335">-0.235 死叉</span></td>
-          <td class="down">-42.3%</td>
-        </tr>
-        <tr>
-          <td><b>网易</b><br><span style="font-size:11px;color:var(--text2)">9999.HK</span></td>
-          <td class="up"><b>HK$179.20</b></td>
-          <td class="up">▲2.40%</td>
-          <td class="down">▼0.06%</td>
-          <td class="down">▼14.01%</td>
-          <td><span style="color:#b06000">36.0 接近超卖</span></td>
-          <td><span style="color:#ea4335">-0.697 死叉</span></td>
-          <td class="down">-27.7%</td>
-        </tr>
-        <tr>
-          <td><b>快手-W</b><br><span style="font-size:11px;color:var(--text2)">1024.HK</span></td>
-          <td class="down"><b>HK$62.85</b></td>
-          <td class="down">▼1.18%</td>
-          <td class="down">▼5.49%</td>
-          <td class="down">▼20.04%</td>
-          <td><span style="color:#c5221f;font-weight:bold">20.7 ❗极度超卖</span></td>
-          <td><span style="color:#ea4335">-0.967 死叉</span></td>
-          <td class="down">-32.1%</td>
-        </tr>
-        <tr>
-          <td><b>友邦保险</b><br><span style="font-size:11px;color:var(--text2)">1299.HK</span></td>
-          <td class="up"><b>HK$86.80</b></td>
-          <td class="up">▲2.48%</td>
-          <td class="up">▲5.47%</td>
-          <td class="up">▲4.52%</td>
-          <td><span style="color:#b06000">42.2 接近超卖</span></td>
-          <td><span style="color:#ea4335">-0.080 死叉</span></td>
-          <td class="down">-5.8%</td>
-        </tr>
-        <tr>
-          <td><b>中国平安</b><br><span style="font-size:11px;color:var(--text2)">2318.HK</span></td>
-          <td class="up"><b>HK$68.00</b></td>
-          <td class="up">▲0.22%</td>
-          <td class="down">▼3.61%</td>
-          <td class="down">▼0.15%</td>
-          <td><span style="color:#b06000">39.8 接近超卖</span></td>
-          <td><span style="color:#ea4335">-0.602 死叉</span></td>
-          <td class="down">-9.0%</td>
-        </tr>
-        <tr>
-          <td><b>中国生物制药</b><br><span style="font-size:11px;color:var(--text2)">1177.HK</span></td>
-          <td class="down"><b>HK$6.05</b></td>
-          <td class="down">▼1.63%</td>
-          <td class="down">▼9.02%</td>
-          <td class="down">▼7.21%</td>
-          <td><span style="color:#b06000">40.9 接近超卖</span></td>
-          <td><span style="color:#ea4335">-0.051 死叉</span></td>
-          <td class="down">-33.7%</td>
-        </tr>
-        <tr>
-          <td><b>京东集团-SW</b><br><span style="font-size:11px;color:var(--text2)">9618.HK</span></td>
-          <td class="up"><b>HK$104.40</b></td>
-          <td class="up">▲0.38%</td>
-          <td class="up">▲0.58%</td>
-          <td class="down">▼10.00%</td>
-          <td><span style="color:#b06000">41.5 接近超卖</span></td>
-          <td><span style="color:#ea4335">-0.235 死叉</span></td>
-          <td class="down">-42.3%</td>
-        </tr>
-        <tr>
-          <td><b>思摩尔国际</b><br><span style="font-size:11px;color:var(--text2)">6969.HK</span></td>
-          <td class="down"><b>HK$11.85</b></td>
-          <td class="down">▼0.59%</td>
-          <td class="down">▼1.09%</td>
-          <td class="up">▲10.23%</td>
-          <td><span style="color:#1e8e3e">59.9 偏强</span></td>
-          <td><span style="color:#ea4335">-0.009 死叉</span></td>
-          <td class="down">-50.9%</td>
-        </tr></tbody>
-    </table>
-  </div>
+<!-- TOP3 推荐 -->
+<div class="card">
+  <div class="card-header"><div class="icon icon-red">🏆</div><h2>今日 TOP3 推荐股票</h2></div>
+  <p style="color:var(--text2);font-size:13px;margin-bottom:16px">基于技术指标综合评分，筛选出最具关注价值的标的</p>
+</div>
 
-  
-        <div class="stock-section">
-          <div class="stock-header">
-            <span class="stock-badge">🥇 推荐#1</span>
-            <div>
-              <div style="font-size:22px;font-weight:bold">快手-W</div>
-              <div style="color:var(--text2);font-size:14px">1024.HK · 港交所</div>
-            </div>
-            <div style="margin-left:auto;text-align:right">
-              <div class="stock-price down">HK$62.85</div>
-              <div style="font-size:14px" class="down">▼1.18% 昨收</div>
-            </div>
-          </div>
 
-          <div class="section-title">关键行情数据</div>
-          <div class="indicator-grid">
-            <div class="ind-item"><div class="il">最新收盘</div><div class="iv down">HK$62.85</div></div>
-            <div class="ind-item"><div class="il">52周最高</div><div class="iv">HK$92.60</div></div>
-            <div class="ind-item"><div class="il">52周最低</div><div class="iv">HK$42.90</div></div>
-            <div class="ind-item"><div class="il">距52周高点</div><div class="iv down">-32.1%</div></div>
-            <div class="ind-item"><div class="il">月涨跌</div><div class="iv down">▼20.04%</div></div>
-            <div class="ind-item"><div class="il">年涨跌</div><div class="iv up">▲6.71%</div></div>
-            <div class="ind-item"><div class="il">RSI(14)</div><div class="iv"><span style="color:#c5221f;font-weight:bold">20.7 ❗极度超卖</span></div></div>
-            <div class="ind-item"><div class="il">MACD柱</div><div class="iv"><span style="color:#ea4335">-0.967 死叉</span></div></div>
-            <div class="ind-item"><div class="il">布林带位置</div><div class="iv">13.0%</div></div>
-            <div class="ind-item"><div class="il">昨日成交量</div><div class="iv">42,879,063</div></div>
-            <div class="ind-item"><div class="il">近支撑</div><div class="iv">N/A</div></div>
-            <div class="ind-item"><div class="il">近压力</div><div class="iv">HK$65.60</div></div>
-          </div>
-
-          <div class="section-title">均线系统</div>
-          <table class="data-table">
-            <thead><tr><th>均线</th><th>数值</th><th>偏离</th><th>信号</th></tr></thead>
-            <tbody><tr><td>MA5</td><td>HK$65.60</td><td class='down'>-4.2%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA10</td><td>HK$67.18</td><td class='down'>-6.4%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA20</td><td>HK$71.24</td><td class='down'>-11.8%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA60</td><td>HK$71.12</td><td class='down'>-11.6%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA120</td><td>HK$72.70</td><td class='down'>-13.6%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA250</td><td>HK$66.63</td><td class='down'>-5.7%</td><td><span class="status status-danger">↓ 空头</span></td></tr></tbody>
-          </table>
-
-          <div class="recommendation" style="margin-top:20px">
-            <h3>快手-W 投资建议</h3>
-            <div class="verdict">⭐⭐⭐⭐⭐ 综合评分 7/10</div>
-            <p style="opacity:.9;margin-bottom:16px">推荐理由：RSI=20.7极度超卖 | 距高-32.1%深度超跌 | 月跌-20.0%超跌</p>
-            <div class="price-targets">
-              <div class="price-target"><div class="label">💚 关注买入区</div><div class="value">HK$60.96~62.85</div></div>
-              <div class="price-target"><div class="label">🎯 短线目标</div><div class="value">HK$72.28</div></div>
-              <div class="price-target"><div class="label">🛑 止损位</div><div class="value">≤ HK$58.45</div></div>
-            </div>
-          </div>
-        </div>
-        <div class="stock-section">
-          <div class="stock-header">
-            <span class="stock-badge">🥈 推荐#2</span>
-            <div>
-              <div style="font-size:22px;font-weight:bold">美团-W</div>
-              <div style="color:var(--text2);font-size:14px">3690.HK · 港交所</div>
-            </div>
-            <div style="margin-left:auto;text-align:right">
-              <div class="stock-price up">HK$81.15</div>
-              <div style="font-size:14px" class="up">▲0.87% 昨收</div>
-            </div>
-          </div>
-
-          <div class="section-title">关键行情数据</div>
-          <div class="indicator-grid">
-            <div class="ind-item"><div class="il">最新收盘</div><div class="iv up">HK$81.15</div></div>
-            <div class="ind-item"><div class="il">52周最高</div><div class="iv">HK$189.60</div></div>
-            <div class="ind-item"><div class="il">52周最低</div><div class="iv">HK$79.25</div></div>
-            <div class="ind-item"><div class="il">距52周高点</div><div class="iv down">-57.2%</div></div>
-            <div class="ind-item"><div class="il">月涨跌</div><div class="iv down">▼16.43%</div></div>
-            <div class="ind-item"><div class="il">年涨跌</div><div class="iv down">▼51.61%</div></div>
-            <div class="ind-item"><div class="il">RSI(14)</div><div class="iv"><span style="color:#ea4335;font-weight:bold">29.6 超卖</span></div></div>
-            <div class="ind-item"><div class="il">MACD柱</div><div class="iv"><span style="color:#ea4335">-0.440 死叉</span></div></div>
-            <div class="ind-item"><div class="il">布林带位置</div><div class="iv">21.3%</div></div>
-            <div class="ind-item"><div class="il">昨日成交量</div><div class="iv">42,462,533</div></div>
-            <div class="ind-item"><div class="il">近支撑</div><div class="iv">N/A</div></div>
-            <div class="ind-item"><div class="il">近压力</div><div class="iv">HK$82.14</div></div>
-          </div>
-
-          <div class="section-title">均线系统</div>
-          <table class="data-table">
-            <thead><tr><th>均线</th><th>数值</th><th>偏离</th><th>信号</th></tr></thead>
-            <tbody><tr><td>MA5</td><td>HK$82.14</td><td class='down'>-1.2%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA10</td><td>HK$82.94</td><td class='down'>-2.2%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA20</td><td>HK$88.44</td><td class='down'>-8.2%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA60</td><td>HK$96.69</td><td class='down'>-16.1%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA120</td><td>HK$98.86</td><td class='down'>-17.9%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA250</td><td>HK$119.39</td><td class='down'>-32.0%</td><td><span class="status status-danger">↓ 空头</span></td></tr></tbody>
-          </table>
-
-          <div class="recommendation" style="margin-top:20px">
-            <h3>美团-W 投资建议</h3>
-            <div class="verdict">⭐⭐⭐⭐⭐ 综合评分 6/10</div>
-            <p style="opacity:.9;margin-bottom:16px">推荐理由：RSI=29.6超卖 | 距高-57.2%深度超跌 | 月跌-16.4%超跌</p>
-            <div class="price-targets">
-              <div class="price-target"><div class="label">💚 关注买入区</div><div class="value">HK$78.72~81.15</div></div>
-              <div class="price-target"><div class="label">🎯 短线目标</div><div class="value">HK$93.32</div></div>
-              <div class="price-target"><div class="label">🛑 止损位</div><div class="value">≤ HK$75.47</div></div>
-            </div>
-          </div>
-        </div>
-        <div class="stock-section">
-          <div class="stock-header">
-            <span class="stock-badge">🥉 推荐#3</span>
-            <div>
-              <div style="font-size:22px;font-weight:bold">阿里巴巴-W</div>
-              <div style="color:var(--text2);font-size:14px">9988.HK · 港交所</div>
-            </div>
-            <div style="margin-left:auto;text-align:right">
-              <div class="stock-price down">HK$142.90</div>
-              <div style="font-size:14px" class="down">▼0.07% 昨收</div>
-            </div>
-          </div>
-
-          <div class="section-title">关键行情数据</div>
-          <div class="indicator-grid">
-            <div class="ind-item"><div class="il">最新收盘</div><div class="iv down">HK$142.90</div></div>
-            <div class="ind-item"><div class="il">52周最高</div><div class="iv">HK$186.20</div></div>
-            <div class="ind-item"><div class="il">52周最低</div><div class="iv">HK$95.70</div></div>
-            <div class="ind-item"><div class="il">距52周高点</div><div class="iv down">-23.3%</div></div>
-            <div class="ind-item"><div class="il">月涨跌</div><div class="iv down">▼13.50%</div></div>
-            <div class="ind-item"><div class="il">年涨跌</div><div class="iv up">▲15.15%</div></div>
-            <div class="ind-item"><div class="il">RSI(14)</div><div class="iv"><span style="color:#ea4335;font-weight:bold">28.5 超卖</span></div></div>
-            <div class="ind-item"><div class="il">MACD柱</div><div class="iv"><span style="color:#ea4335">-2.028 死叉</span></div></div>
-            <div class="ind-item"><div class="il">布林带位置</div><div class="iv">9.4%</div></div>
-            <div class="ind-item"><div class="il">昨日成交量</div><div class="iv">88,719,769</div></div>
-            <div class="ind-item"><div class="il">近支撑</div><div class="iv">HK$137.55</div></div>
-            <div class="ind-item"><div class="il">近压力</div><div class="iv">HK$146.88</div></div>
-          </div>
-
-          <div class="section-title">均线系统</div>
-          <table class="data-table">
-            <thead><tr><th>均线</th><th>数值</th><th>偏离</th><th>信号</th></tr></thead>
-            <tbody><tr><td>MA5</td><td>HK$146.88</td><td class='down'>-2.7%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA10</td><td>HK$151.03</td><td class='down'>-5.4%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA20</td><td>HK$157.16</td><td class='down'>-9.1%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA60</td><td>HK$154.72</td><td class='down'>-7.6%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA120</td><td>HK$157.10</td><td class='down'>-9.0%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA250</td><td>HK$137.55</td><td class='up'>+3.9%</td><td><span class="status status-success">↑ 多头</span></td></tr></tbody>
-          </table>
-
-          <div class="recommendation" style="margin-top:20px">
-            <h3>阿里巴巴-W 投资建议</h3>
-            <div class="verdict">⭐⭐⭐⭐⭐ 综合评分 5/10</div>
-            <p style="opacity:.9;margin-bottom:16px">推荐理由：RSI=28.5超卖 | 距高-23.3%超跌 | 守住年线</p>
-            <div class="price-targets">
-              <div class="price-target"><div class="label">💚 关注买入区</div><div class="value">HK$138.61~142.90</div></div>
-              <div class="price-target"><div class="label">🎯 短线目标</div><div class="value">HK$164.34</div></div>
-              <div class="price-target"><div class="label">🛑 止损位</div><div class="value">≤ HK$132.90</div></div>
-            </div>
-          </div>
-        </div>
-
-  <div class="card">
-    <div class="risk-warning">
-      <h4>⚠️ 风险提示</h4>
-      <ul>
-        <li>港股受中美关系、美联储政策、人民币汇率等多重因素影响，波动较大</li>
-        <li>本报告数据来源于Stooq历史收盘价，不含今日实时盘前数据</li>
-        <li>恒生科技指数波动剧烈，中概股受监管政策影响较大</li>
-        <li>本报告仅供参考，不构成任何投资建议，投资需谨慎</li>
-      </ul>
+<div class="stock-section">
+  <div class="stock-section-header">
+    <span class="stock-badge">🥇 推荐#1</span>
+    <div>
+      <div style="font-size:20px;font-weight:bold">阿里巴巴</div>
+      <div style="color:var(--text2);font-size:13px">HKEX: 9988.HK · 评分理由：RSI=28.5极度超卖 · 距高-23.3% · 月跌-15.9%超跌 · 近布林下轨</div>
+    </div>
+    <div class="stock-price-box" style="margin-left:auto">
+      <div class="sp down">HK$142.90</div>
+      <div style="color:#ea4335;font-size:13px"><span style='color:#c5221f'>▼0.07%</span> 昨收</div>
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-header"><div class="icon icon-blue">🔗</div><h2>快捷链接</h2></div>
-    <div class="quick-links">
-      <a href="https://quote.eastmoney.com/hk/00700.html" target="_blank" class="quick-link">📊 腾讯东财</a>
-      <a href="https://quote.eastmoney.com/hk/09988.html" target="_blank" class="quick-link">📊 阿里东财</a>
-      <a href="https://quote.eastmoney.com/hk/03690.html" target="_blank" class="quick-link">📊 美团东财</a>
-      <a href="https://stooq.com/q/?s=0700.hk" target="_blank" class="quick-link">📈 腾讯图表</a>
-      <a href="https://finance.yahoo.com/quote/0700.HK" target="_blank" class="quick-link">🌐 腾讯雅虎</a>
-      <a href="https://www.hkex.com.hk/?sc_lang=zh-HK" target="_blank" class="quick-link">🏦 港交所官网</a>
+  <div class="section-title">关键行情数据</div>
+  <div class="indicator-grid">
+    <div class="ind-item"><div class="il">最新价</div><div class="iv">HK$142.90</div></div>
+    <div class="ind-item"><div class="il">昨收</div><div class="iv">HK$143.00</div></div>
+    <div class="ind-item"><div class="il">52周最高</div><div class="iv">HK$186.20</div></div>
+    <div class="ind-item"><div class="il">52周最低</div><div class="iv">HK$95.70</div></div>
+    <div class="ind-item"><div class="il">距高点</div><div class="iv down">-23.3%</div></div>
+    <div class="ind-item"><div class="il">日涨跌</div><div class="iv down"><span style='color:#c5221f'>▼0.07%</span></div></div>
+    <div class="ind-item"><div class="il">周涨跌</div><div class="iv down"><span style='color:#c5221f'>▼2.86%</span></div></div>
+    <div class="ind-item"><div class="il">月涨跌</div><div class="iv down"><span style='color:#c5221f'>▼15.89%</span></div></div>
+    <div class="ind-item"><div class="il">年涨跌</div><div class="iv up"><span style='color:#1e8e3e'>▲18.20%</span></div></div>
+    <div class="ind-item"><div class="il">RSI(14)</div><div class="iv"><span style='color:#c5221f'>28.5 ❗极度超卖</span></div></div>
+    <div class="ind-item"><div class="il">MACD柱</div><div class="iv down">-2.028 死叉</div></div>
+    <div class="ind-item"><div class="il">布林带位置</div><div class="iv">9.4%</div></div>
+    <div class="ind-item"><div class="il">成交量</div><div class="iv">88,719,769</div></div>
+    <div class="ind-item"><div class="il">数据日期</div><div class="iv">2026-02-27</div></div>
+  </div>
+
+  <div class="section-title">均线系统</div>
+  <table class="data-table">
+    <thead><tr><th>均线</th><th>数值</th><th>偏离</th><th>信号</th></tr></thead>
+    <tbody><tr><td>MA5</td><td>HK$146.88</td><td>-2.7%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA10</td><td>HK$151.03</td><td>-5.4%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA20</td><td>HK$157.16</td><td>-9.1%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA60</td><td>HK$154.72</td><td>-7.6%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA120</td><td>HK$157.10</td><td>-9.0%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA250</td><td>HK$137.55</td><td>+3.9%</td><td><span class="status status-success">↑ 多头</span></td></tr></tbody>
+  </table>
+
+  <div class="section-title">布林带</div>
+  <div class="indicator-grid">
+    <div class="ind-item"><div class="il">上轨</div><div class="iv">HK$174.71</div></div>
+    <div class="ind-item"><div class="il">中轨</div><div class="iv">HK$157.16</div></div>
+    <div class="ind-item"><div class="il">下轨</div><div class="iv">HK$139.60</div></div>
+    <div class="ind-item"><div class="il">价格位置</div><div class="iv">9.4%</div></div>
+  </div>
+</div>
+<div class="stock-section">
+  <div class="stock-section-header">
+    <span class="stock-badge">🥈 推荐#2</span>
+    <div>
+      <div style="font-size:20px;font-weight:bold">美团</div>
+      <div style="color:var(--text2);font-size:13px">HKEX: 3690.HK · 评分理由：RSI=29.6极度超卖 · 距高-57.2% · 月跌-16.0%超跌 · 周线企稳</div>
+    </div>
+    <div class="stock-price-box" style="margin-left:auto">
+      <div class="sp up">HK$81.15</div>
+      <div style="color:#1e8e3e;font-size:13px"><span style='color:#1e8e3e'>▲0.87%</span> 昨收</div>
     </div>
   </div>
+
+  <div class="section-title">关键行情数据</div>
+  <div class="indicator-grid">
+    <div class="ind-item"><div class="il">最新价</div><div class="iv">HK$81.15</div></div>
+    <div class="ind-item"><div class="il">昨收</div><div class="iv">HK$80.45</div></div>
+    <div class="ind-item"><div class="il">52周最高</div><div class="iv">HK$189.60</div></div>
+    <div class="ind-item"><div class="il">52周最低</div><div class="iv">HK$79.25</div></div>
+    <div class="ind-item"><div class="il">距高点</div><div class="iv down">-57.2%</div></div>
+    <div class="ind-item"><div class="il">日涨跌</div><div class="iv up"><span style='color:#1e8e3e'>▲0.87%</span></div></div>
+    <div class="ind-item"><div class="il">周涨跌</div><div class="iv up"><span style='color:#1e8e3e'>▲0.50%</span></div></div>
+    <div class="ind-item"><div class="il">月涨跌</div><div class="iv down"><span style='color:#c5221f'>▼15.95%</span></div></div>
+    <div class="ind-item"><div class="il">年涨跌</div><div class="iv down"><span style='color:#c5221f'>▼48.28%</span></div></div>
+    <div class="ind-item"><div class="il">RSI(14)</div><div class="iv"><span style='color:#c5221f'>29.6 ❗极度超卖</span></div></div>
+    <div class="ind-item"><div class="il">MACD柱</div><div class="iv down">-0.440 死叉</div></div>
+    <div class="ind-item"><div class="il">布林带位置</div><div class="iv">21.3%</div></div>
+    <div class="ind-item"><div class="il">成交量</div><div class="iv">42,462,533</div></div>
+    <div class="ind-item"><div class="il">数据日期</div><div class="iv">2026-02-27</div></div>
+  </div>
+
+  <div class="section-title">均线系统</div>
+  <table class="data-table">
+    <thead><tr><th>均线</th><th>数值</th><th>偏离</th><th>信号</th></tr></thead>
+    <tbody><tr><td>MA5</td><td>HK$82.14</td><td>-1.2%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA10</td><td>HK$82.94</td><td>-2.2%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA20</td><td>HK$88.44</td><td>-8.2%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA60</td><td>HK$96.69</td><td>-16.1%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA120</td><td>HK$98.86</td><td>-17.9%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA250</td><td>HK$119.39</td><td>-32.0%</td><td><span class="status status-danger">↓ 空头</span></td></tr></tbody>
+  </table>
+
+  <div class="section-title">布林带</div>
+  <div class="indicator-grid">
+    <div class="ind-item"><div class="il">上轨</div><div class="iv">HK$101.12</div></div>
+    <div class="ind-item"><div class="il">中轨</div><div class="iv">HK$88.44</div></div>
+    <div class="ind-item"><div class="il">下轨</div><div class="iv">HK$75.75</div></div>
+    <div class="ind-item"><div class="il">价格位置</div><div class="iv">21.3%</div></div>
+  </div>
+</div>
+<div class="stock-section">
+  <div class="stock-section-header">
+    <span class="stock-badge">🥉 推荐#3</span>
+    <div>
+      <div style="font-size:20px;font-weight:bold">快手</div>
+      <div style="color:var(--text2);font-size:13px">HKEX: 1024.HK · 评分理由：RSI=20.7极度超卖 · 距高-32.1% · 月跌-20.2%超跌 · 近布林下轨</div>
+    </div>
+    <div class="stock-price-box" style="margin-left:auto">
+      <div class="sp down">HK$62.85</div>
+      <div style="color:#ea4335;font-size:13px"><span style='color:#c5221f'>▼1.18%</span> 昨收</div>
+    </div>
+  </div>
+
+  <div class="section-title">关键行情数据</div>
+  <div class="indicator-grid">
+    <div class="ind-item"><div class="il">最新价</div><div class="iv">HK$62.85</div></div>
+    <div class="ind-item"><div class="il">昨收</div><div class="iv">HK$63.60</div></div>
+    <div class="ind-item"><div class="il">52周最高</div><div class="iv">HK$92.60</div></div>
+    <div class="ind-item"><div class="il">52周最低</div><div class="iv">HK$42.90</div></div>
+    <div class="ind-item"><div class="il">距高点</div><div class="iv down">-32.1%</div></div>
+    <div class="ind-item"><div class="il">日涨跌</div><div class="iv down"><span style='color:#c5221f'>▼1.18%</span></div></div>
+    <div class="ind-item"><div class="il">周涨跌</div><div class="iv down"><span style='color:#c5221f'>▼5.49%</span></div></div>
+    <div class="ind-item"><div class="il">月涨跌</div><div class="iv down"><span style='color:#c5221f'>▼20.24%</span></div></div>
+    <div class="ind-item"><div class="il">年涨跌</div><div class="iv up"><span style='color:#1e8e3e'>▲15.53%</span></div></div>
+    <div class="ind-item"><div class="il">RSI(14)</div><div class="iv"><span style='color:#c5221f'>20.7 ❗极度超卖</span></div></div>
+    <div class="ind-item"><div class="il">MACD柱</div><div class="iv down">-0.967 死叉</div></div>
+    <div class="ind-item"><div class="il">布林带位置</div><div class="iv">13.0%</div></div>
+    <div class="ind-item"><div class="il">成交量</div><div class="iv">42,879,063</div></div>
+    <div class="ind-item"><div class="il">数据日期</div><div class="iv">2026-02-27</div></div>
+  </div>
+
+  <div class="section-title">均线系统</div>
+  <table class="data-table">
+    <thead><tr><th>均线</th><th>数值</th><th>偏离</th><th>信号</th></tr></thead>
+    <tbody><tr><td>MA5</td><td>HK$65.60</td><td>-4.2%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA10</td><td>HK$67.18</td><td>-6.4%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA20</td><td>HK$71.24</td><td>-11.8%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA60</td><td>HK$71.12</td><td>-11.6%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA120</td><td>HK$72.70</td><td>-13.6%</td><td><span class="status status-danger">↓ 空头</span></td></tr><tr><td>MA250</td><td>HK$66.63</td><td>-5.7%</td><td><span class="status status-danger">↓ 空头</span></td></tr></tbody>
+  </table>
+
+  <div class="section-title">布林带</div>
+  <div class="indicator-grid">
+    <div class="ind-item"><div class="il">上轨</div><div class="iv">HK$82.57</div></div>
+    <div class="ind-item"><div class="il">中轨</div><div class="iv">HK$71.24</div></div>
+    <div class="ind-item"><div class="il">下轨</div><div class="iv">HK$59.90</div></div>
+    <div class="ind-item"><div class="il">价格位置</div><div class="iv">13.0%</div></div>
+  </div>
+</div>
+
+<!-- 风险提示 -->
+<div class="card">
+  <div class="risk-warning">
+    <h4>⚠️ 风险提示</h4>
+    <ul>
+      <li>港股受中美关系、美联储政策、内地经济数据等多重因素影响，波动较大</li>
+      <li>恒生科技指数成分股受监管政策影响，需关注政策面变化</li>
+      <li>技术分析基于历史数据，不代表未来走势，超跌不等于趋势反转</li>
+      <li>数据截至最近一个交易日收盘，盘前实时数据请参考港交所或东方财富</li>
+      <li>⚠️ 本报告仅供参考，不构成任何投资建议，投资者需自行承担风险</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 快捷链接 -->
+<div class="card">
+  <div class="card-header"><div class="icon icon-blue">🔗</div><h2>快捷链接</h2></div>
+  <div class="quick-links">
+    <a href="https://www.hkex.com.hk/?sc_lang=zh-HK" target="_blank" class="quick-link">🏛️ 港交所官网</a>
+    <a href="https://quote.eastmoney.com/hk/00700.html" target="_blank" class="quick-link">📊 腾讯控股</a>
+    <a href="https://quote.eastmoney.com/hk/09988.html" target="_blank" class="quick-link">📊 阿里巴巴</a>
+    <a href="https://quote.eastmoney.com/hk/03690.html" target="_blank" class="quick-link">📊 美团</a>
+    <a href="https://quote.eastmoney.com/hk/09618.html" target="_blank" class="quick-link">📊 京东</a>
+    <a href="https://stooq.com/q/?s=%5Ehsi" target="_blank" class="quick-link">📈 恒生指数图表</a>
+  </div>
+</div>
 
 </div>
 <div class="footer">
-  <p>报告生成时间：2026-03-02 19:34 | 数据来源：Stooq历史数据</p>
-  <p style="margin-top:8px">免责声明：本报告仅供参考，不构成任何投资建议。股市有风险，投资需谨慎。</p>
+  <p>报告生成时间：2026-03-02 19:37 | 数据来源：Stooq历史数据</p>
+  <p style="margin-top:8px;color:#c62828">免责声明：本报告仅供参考，不构成投资建议，股市有风险，投资需谨慎</p>
 </div>
 </body>
 </html>
