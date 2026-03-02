@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>港股盘前报告 · 2026-03-02</title>
+<style>
+:root{--primary:#c0392b;--success:#27ae60;--warning:#f39c12;--danger:#e74c3c;--info:#2980b9;--bg:#f8f9fa;--card:#ffffff;--text:#202124;--text2:#5f6368;--border:#dadce0;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;padding:20px;}
+.container{max-width:1200px;margin:0 auto;}
+.header{background:linear-gradient(135deg,#c0392b,#8e1a12,#6b0f0a);color:white;padding:32px;border-radius:16px;margin-bottom:24px;box-shadow:0 4px 20px rgba(192,57,43,.3);}
+.header h1{font-size:28px;margin-bottom:6px;letter-spacing:1px;}
+.header .subtitle{opacity:.85;font-size:13px;}
+.market-bar{display:flex;gap:16px;margin-top:20px;flex-wrap:wrap;}
+.mkt-item{background:rgba(255,255,255,.12);padding:12px 20px;border-radius:12px;min-width:150px;}
+.mkt-item .mkt-name{font-size:12px;opacity:.8;margin-bottom:4px;}
+.mkt-item .mkt-price{font-size:22px;font-weight:bold;}
+.mkt-item .mkt-chg{font-size:13px;margin-top:2px;}
+.up{color:#e74c3c;}.down{color:#27ae60;}
+.card{background:var(--card);border-radius:12px;padding:24px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,.08);}
+.card-header{display:flex;align-items:center;gap:10px;margin-bottom:20px;padding-bottom:15px;border-bottom:1px solid var(--border);}
+.card-header h2{font-size:18px;}
+.icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;}
+.icon-red{background:#fce8e6;color:#c0392b;}.icon-green{background:#e6f4ea;color:#27ae60;}.icon-blue{background:#e8f0fe;color:#2980b9;}
+.data-table{width:100%;border-collapse:collapse;font-size:13px;}
+.data-table th,.data-table td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--border);}
+.data-table th{background:var(--bg);font-weight:600;color:var(--text2);}
+.data-table tr:hover{background:#fafafa;}
+.status{display:inline-block;padding:2px 9px;border-radius:10px;font-size:12px;font-weight:500;}
+.status-success{background:#e6f4ea;color:#1e8e3e;}.status-warning{background:#fef7e0;color:#b06000;}.status-danger{background:#fce8e6;color:#c5221f;}.status-info{background:#e8f0fe;color:#1a73e8;}
+.indicator-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:14px 0;}
+.ind-item{background:var(--bg);padding:10px 12px;border-radius:8px;}
+.ind-item .il{font-size:11px;color:var(--text2);}
+.ind-item .iv{font-size:15px;font-weight:bold;margin-top:2px;}
+.section-title{font-size:14px;font-weight:600;color:var(--text2);margin:16px 0 8px;}
+.stock-section{border:2px solid var(--border);border-radius:14px;padding:22px;margin-bottom:24px;background:#fff;}
+.stock-section-header{display:flex;align-items:center;gap:14px;margin-bottom:18px;padding-bottom:14px;border-bottom:2px solid var(--border);}
+.stock-badge{background:linear-gradient(135deg,#c0392b,#8e1a12);color:white;padding:7px 16px;border-radius:18px;font-size:15px;font-weight:bold;white-space:nowrap;}
+.stock-price-box{background:var(--bg);padding:10px 18px;border-radius:10px;text-align:right;}
+.stock-price-box .sp{font-size:26px;font-weight:bold;}
+.recommendation{background:linear-gradient(135deg,#c0392b,#e74c3c);color:white;padding:24px;border-radius:14px;text-align:center;margin-top:16px;}
+.recommendation .verdict{font-size:16px;font-weight:bold;margin:10px 0 14px;opacity:.95;}
+.price-targets{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px;}
+.price-target{background:rgba(255,255,255,.18);padding:12px;border-radius:10px;}
+.price-target .label{font-size:11px;opacity:.8;}
+.price-target .value{font-size:18px;font-weight:bold;margin-top:3px;}
+.risk-warning{background:#fff3e0;border-left:4px solid #ff9800;padding:16px;border-radius:0 10px 10px 0;}
+.risk-warning h4{color:#e65100;margin-bottom:8px;}
+.risk-warning ul{margin-left:18px;color:#5d4037;}
+.risk-warning li{margin-bottom:5px;font-size:13px;}
+.footer{text-align:center;padding:20px;color:var(--text2);font-size:12px;}
+@media(max-width:768px){.header h1{font-size:20px;}.market-bar{flex-direction:column;}.price-targets{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+    <h1>🇭🇰 港股盘前报告</h1>
+    <div class="subtitle">生成时间：2026-03-02 19:29:14（北京时间）｜ 港股今日预计 09:30 开盘</div>
+    <div class="market-bar">
+        
+        <div class="mkt-item">
+            <div class="mkt-name">恒生指数</div>
+            <div class="mkt-price">26,059.85</div>
+            <div class="mkt-chg down">▼ -2.14% 昨收</div>
+        </div>
+        <div class="mkt-item">
+            <div class="mkt-name">货币</div>
+            <div class="mkt-price" style="font-size:16px">港元 HKD</div>
+            <div class="mkt-chg" style="color:#f1c40f">⚡ 自动生成</div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header"><div class="icon icon-red">📊</div><h2>全市场扫描（数据截至上一交易日收盘）</h2></div>
+    <table class="data-table">
+        <thead><tr><th>股票</th><th>昨收价</th><th>日涨跌</th><th>周涨跌</th><th>月涨跌</th><th>RSI(14)</th><th>MACD</th><th>距52W高</th><th>推荐度</th></tr></thead>
+        <tbody>
+            <tr>
+                <td><strong>恒生指数</strong></td>
+                <td>HK$26,059.85</td>
+                <td class="down">▼2.14%</td>
+                <td class="down">▼3.77%</td>
+                <td class="down">▼3.93%</td>
+                <td><span style="color:#b06000">41.2 接近超卖</span></td>
+                <td><span class="status status-danger">-100.17 死叉</span></td>
+                <td class="down">-7.1%</td>
+                <td><span class="status status-info">指数</span></td>
+            </tr></tbody>
+    </table>
+</div>
+
+<div class="card">
+    <div class="card-header"><div class="icon icon-green">🏆</div><h2>今日重点推荐（TOP 3）</h2></div>
+    <div style="padding:12px;background:#fce8e6;border-radius:8px;margin-bottom:14px;font-size:13px">
+        <strong>📋 选股逻辑：</strong>综合 RSI 超卖程度 × MACD 信号 × 距52周高点距离 × 月超跌幅度 × 年线支撑，自动评分排序。
+    </div>
+    <table class="data-table">
+        <thead><tr><th>排名</th><th>股票</th><th>推荐理由</th><th>综合评分</th></tr></thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<h2 style="text-align:center;font-size:22px;margin:24px 0 20px">📈 推荐股票深度分析</h2>
+
+
+<div class="card">
+    <div class="risk-warning">
+        <h4>⚠️ 风险提示</h4>
+        <ul>
+            <li>本报告数据来源于 Stooq 历史数据，为上一交易日收盘数据，不包含今日实时盘前报价</li>
+            <li>港股受美股、A股及内地政策三重影响，波动较大，请综合判断</li>
+            <li>科技互联网股受监管政策影响较大，需特别注意政策风险</li>
+            <li>技术指标仅供参考，不构成任何投资建议，股市有风险，投资需谨慎</li>
+            <li>买入价位、目标价、止损位均为技术参考，请根据个人风险承受能力调整</li>
+        </ul>
+    </div>
+</div>
+
+<div class="footer">
+    <p>报告生成时间：2026-03-02 19:29:14 | 数据来源：Stooq 历史行情</p>
+    <p style="margin-top:10px;padding:12px;background:#fff3e0;border-radius:8px;color:#5d4037">
+        <strong>免责声明：</strong>本报告仅供学习参考，不构成任何投资建议。投资者应独立判断，自行承担风险。
+    </p>
+</div>
+</div>
+</body>
+</html>
